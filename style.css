@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#box1{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+.glass{
+  height: 100%;
+  width: 100%;
+  background-color:rgba(95,95,95,.5);
+  display:block;
+  background-size: cover;
+}
+
+.text{
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+
+.name_tag{
+  font-family: monospace;
+  color:white;
+  padding: 5px;
+  font-size: 3vw;
+  text-align: center;
+  vertical-align: middle;
+  width: 0ch;
+  animation: type 2s steps(31) .5s forwards,blink-caret .5s step-end .5s  4;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes type {
+  0%{width: 0ch;}
+  100%{width: 31ch;}
+}
+
+@-webkit-keyframes blink-caret {50% { border-right:2px solid white;}}
+
+.title_tag{
+  position: absolute;
+  left: 30%;
+  padding: 5px;
+  font-family: monospace;
+  color:white;
+  margin: 0px;
+  font-size: 2.5vw;
+  width:0ch;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: test 1s steps(15) 2.5s forwards,blink-caret2 .5s step-end infinite,visibility .2s ease-in-out 2.4s forwards;
+}
+@keyframes test {
+  0%{width: 0ch;}
+  100%{width: 15ch;}
+}
+
+@keyframes visibility {
+  0%{opacity: 0;}
+  100%{opacity:1;}
+}
+
+@-webkit-keyframes blink-caret2 {50% { border-right:2px solid white;}}
+
+.arrowcontainer{
+  width: 7vh;
+  height: 9vh;
+  background-color:transparent;
+  position: absolute;
+  top: 250%;
+  left: 46%;
+}
+
+.arrowcontainer:hover{
+  cursor: pointer;
+}
+
+.down-arrow{
+  opacity: 0;
+  width:50px;
+  height: 40px;
+  animation: updown .5s ease-in-out alternate infinite,visibiity .1s ease-in-out 3.8s forwards;
+}
+
+@keyframes updown {
+  0%{transform: translateY(0);}
+  100%{transform: translateY(15px);}
+}
+
+@keyframes visibiity {
+  0%{opacity: 0;}
+  100%{opacity:1;}
+}
+
+#box2{
+    height: 100vh;
+    width: 100%;
+    background-color: inherit;
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+
+
+.skills-title{
+  text-align: center;
+  font-size: 5vh;
+  font-family:sans-serif;
+}
+.github{
+   width: 47vh;
+   padding: 30px;
+}
+.jenkins{
+   width: 47vh;
+   padding: 30px;
+}
+.docker{
+   width: 47vh;
+   padding: 30px;
+}
+.aws{
+   width: 47vh;
+   padding: 30px;
+}
+.gcp{
+   width: 47vh;
+   padding: 30px;
+}
+.core-os{
+   width: 47vh;
+   padding: 30px;
+}
+.ubuntu{
+   width: 47vh;
+   padding: 30px;
+}
+
+.red-hat{
+   width: 47vh;
+   padding: 30px;
+}
+.chef{
+   width: 47vh;
+   padding: 30px;
+}
+.zabbix{
+   width: 47vh;
+   padding: 30px;
+}
+.anisible{
+   width: 47vh;
+   padding: 30px;
+}
+.prometheus{
+   width: 47vh;
+   padding: 30px;
+}
+.kubernetes{
+   width: 47vh;
+   padding: 30px;
+}
